@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <title>Portfolio</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
+    <link rel="stylesheet" href="./assets/css/aboutme.css" />
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/work.css" />
+    <link rel="stylesheet" href="./assets/css/alertBox.css" />
+    <link rel="stylesheet" href="./assets/css/animations.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-jxEcA48s1tKj3qAW8Fk2YwNhKNBYYy88c3xXkiWugj2zvCkTLZfBkPj8pOiY/+KjVHymI6dFe0XNYWg6o5v6VA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="icon" href="pngtree.jpg"/> -->
+  </head>
+
+  <body>
+    <!-- nav bar  -->
+    <nav>
+          <!-- <svg width="65" height="65" viewBox="0 0 115 115" fill="none" xmlns="h">
+            <circle cx="52.5" cy="52.5" r="50.4574" stroke="black" stroke-width="3.9148"/>
+            <path d="M44.8248 37.7642H48.5605V55.8356L32.0767 36.5034H24.1851V37.7642H27.9208V63.2603H24.1851V64.5211H33.8512C33.6644 63.7429 33.2441 63.3226 32.5904 63.2603H29.882V43.788L47.86 64.7546L50.5217 64.2876V37.7642H54.2574V36.5034H44.8248V37.7642ZM70.0874 64.7546L79.8469 37.7642H82.1817V36.5034H74.2434V37.7642H77.9791L70.928 57.5167L62.9429 37.7642H66.6319V36.5034H54.0239V37.7642H56.4054L65.6513 60.9255C66.4296 62.9179 67.0366 64.0697 67.4724 64.381C67.846 64.6301 68.3908 64.7546 69.1068 64.7546H70.0874Z" fill="black"/>
+          </svg> -->
+      <ul class="links">
+        
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  <div class="dummy">
+    <div class="alert" id="myAlert">
+      <span class="closebtn" onclick="closeAlert()">&times;</span>
+      <b>have a look at my LinkedIn profile</b>
+      <a target="_blank" href="https://www.linkedin.com/in/krishnaraj-shetty-b10617229">click</a>
+    </div>
+  </div>
+  
+  <script>
+    // Close the alert box after 5 seconds (5000 milliseconds)
+    setTimeout(function () {
+      document.getElementById("myAlert").style.display = "none";
+    }, 9000);
+
+    function closeAlert() {
+      document.getElementById("myAlert").style.display = "none";
+    }
+  </script>
+
+    
+
+    <!-- socials -->
+    <div class="social-1">
+      <a href="mailto:krishnarajshetty699@gmail.com">krishnarajshetty699@gmail.com</a>
+
+    </div>
+
+    <div class="social-2">
+      <a target="_blank" href="https://github.com/Krishnaraj017"
+        ><img src="./assets/images/GitHub.png" height="25px"
+      /></a>
+      <a target="_blank" href="https://www.instagram.com/invites/contact/?i=1xu38aw6cgkii&utm_content=81u9tlc"
+        ><img src="./assets/images/Instagram.png" height="25px"
+      /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/krishnaraj-shetty-b10617229"
+        ><img src="./assets/images/LinkedIn.png" height="25px"
+      /></a>
+      <a target="_blank" href="https://whatsapp.com/dl"
+        ><img src="./assets/images/pngwing.com.png" height="23px"
+      /></a>
+    </div>
+
+    <!-- section 1 -->
+    <img
+      class="himg1 image"
+      src="./assets/images/Headphones and bubble with information icon for support.png"
+      height="250px"
+    />
+    <img
+      class="himg2 image"
+      src="./assets/images/Letter thrown in the trash can.png"
+      height="270px"
+    />
+
+    <section class="homepage" id="home">
+      <div class="heading">
+        
+        <div class="main-info">Hey there! <img src="https://camo.githubusercontent.com/e8e7b06ecf583bc040eb60e44eb5b8e0ecc5421320a92929ce21522dbc34c891/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" height="50" width="50" alt="" style="margin-bottom:-10px"> I am</div>
+        <div class="main-head">
+          <h1 class="head-1">Krishnaraj</h1>
+          <h1 class="head-2">Shetty</h1>
+        </div>
+      </div>
+
+      <div class="description">
+        <div style="text-align: center">An aspiring software Engineer</div>
+        <div>based in <span class="india">India</span></div>
+      </div>
+
+      <div class="button">
+        <a href="https://www.linkedin.com/in/krishnaraj-shetty-b10617229">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="skills" id="skills">
+      <div class="right">
+        <div class="heading">
+          <div class="main-head">
+            <h1 >Skills and Experience</h1>
+            <hr class="el2" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="lside">
+          <div class="heading">
+            <div class="main-head">
+              <h1 class="sub-head sub-head2">Skills</h1>
+            </div>
+          </div>
+          <ul
+            style="font-size: 1.2rem; font-family: 'Heebo'"
+            class="skill-list"
+            height="100%"
+          >
+            <div class="group" style="display: flex">
+              <li>
+                <i style="color: green" class="fa-brands fa-node-js"></i>
+                <span>NodeJS</span>
+              </li>
+              <li>
+                <i style="color:black" class="fa fa-mysql" aria-hidden="true"></i>
+                <span >MySQL</span>
+              </li>
+            </div>
+            <div class="group" style="display: flex">
+              <li>
+                <i style="color: #61dbfb" class="fab fa-flutter"></i>
+                <span>Flutter</span>
+              </li>
+              <li>
+                <i  style="color: #FF26BE " class="fab fa-adobe xd-square" ></i>
+
+                <span>Adobe XD</span>
+              </li>
+            </div>
+            <div class="group" style="display: flex">
+              <li>
+                <i style="color: red" class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </li>
+              <li>
+                <i style="color: dodgerblue" class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+              </li>
+            </div>
+            <div
+              class="group"
+              style="
+                display: flex;"
+                >
+              <li>
+                <i style="color: grey" class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+              </li>
+              <li>
+                <i   class="fa-solid fa-app"></i>
+                <span>React Native</span>
+              </li>
+              
+
+            </div>
+            <div class="group" style="
+                            display: flex;">
+
+          <li>
+            <i  style="color: #3DDC84" class="fab fa-android"></i>
+            <span>Android Studio</span>
+          </li>
+          <li>
+            <i style="color: #3DDC84" class="fab fa-github"></i>
+            <span>GitHub</span>
+          </li>
+
+          </div>
+          
+
+          </ul>
+        </div>
+        
+
+
+
+        <div class="rside">
+          <div class="heading">
+            <div class="main-head">
+              <h1 class="sub-head sub-head2">Experience</h1>
+            </div>
+          </div>
+          <div class="container-2 flex-pos">
+            <div class="item flex-pos">
+              <div class="desc">Organizations</div>
+              <div class="circle flex-pos">1</div>
+            </div>
+
+            <div class="item flex-pos">
+              <div class="desc">Projects</div>
+              <div class="circle flex-pos">7+</div>
+            </div>
+
+            <!-- <div class="item flex-pos">
+              <div class="desc">Awards</div>
+              <div class="circle flex-pos">5</div>
+            </div> -->
+
+            <div class="item button">
+              <a href="https://dochub.com/krishnarajshetty699/275eAYrVo3ErqarVzXnBNQ/krishnaraj-resume7-pdf?dt=1szr3k7NZbSwdz3mr8WR" target="_blank">Resume</a>
+            </div>
+            
+          </div>
+          <div class="internship">
+            <p>I'm currently a Flutter intern at
+              <a href="https://www.rosettesmartbottles.com/" style="color:red;">Rosette Smart Bottles</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+
+    <section class="work" id="work">
+      <div class="right">
+        <div class="heading">
+          <div class="info">Stuff I've Built</div>
+          <div class="main-head">
+            <h1>My Work</h1>
+            <hr class="el2" />
+          </div>
+        </div>
+      </div>
+
+      <div class="heading2">Recent Projects</div>
+      <div class="container flex-pos">
+        <div style="background:#805ccc;" class="project highlight flex-pos">
+          <div class="flex-pos">
+            <!-- <div class="label">
+             <i class="fa-solid fa-award"><span class="inner-text">Winner</span></i>
+            </div> -->
+            <div class="title"><h5>MITE-Chatbot</h5></div>
+            <div class="project-img" >
+              <img src="./assets/images/friendly-chatbot.jpg" />
+            </div>
+            <div class="desc" >
+              Chatbot app which helps users to get everything they needed to know about Mangalore Institute of Technology. 
+            </div>
+
+            <div class="link">
+              <a target="_blank" href="https://github.com/Krishnaraj017/MITE-Chatbot"
+                >Visit GitHub <i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          
+        </div>
+          <div style="background:#805ccc;" class="project highlight flex-pos">
+            <div class="flex-pos">
+              <!-- <div class="label">
+                       <i class="fa-solid fa-award"><span class="inner-text">Winner</span></i>
+                      </div> -->
+              <div class="title">
+                <h5>CHAT-GPT APP-Flutter</h5>
+              </div>
+              <div class="project-img">
+                <img src="./assets/images/13317063_5208996.jpg" />
+              </div>
+              <div class="desc">
+                ChatGPT(3.5) App is a simple mobile application built on Flutter.
+              </div>
+          
+              <div class="link">
+                <a target="_blank" href="https://github.com/Krishnaraj017/ChatGPT-App">Visit GitHub <i
+                    class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          
+          </div>
+        <div style="background:#805ccc;" class="project highlight flex-pos">
+          <div class="flex-pos">
+            <!-- <div class="label">
+             <i class="fa-solid fa-award"><span class="inner-text">Winner</span></i>
+            </div> -->
+            <div class="title"><h5>PG FINDER APP</h5></div>
+            <div class="project-img" >
+              <img src="./assets/images/30132602_97z_2206_w009_n001_143c_p6_143.jpg" />
+            </div>
+            <div class="desc" style="overflow: hidden;">
+              A progressive app to find nearby PG for collegue students.
+            </div>
+            <div class="link">
+              <a target="_blank" href="https://github.com/Krishnaraj017"
+                >Visit GitHub <i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="heading2">Featured Projects</div>
+      <div class="container flex-pos">
+        <div class="project flex-pos">
+          <div class="project-img" >
+            <img src="./assets/images/portfolio.gif" />
+          </div>
+          
+          <div class="title">Portfolio Website</div>
+          <div class="desc" > Personal Website built using HTML CSS and JS</div>
+          <div class="link">
+            <a target="_blank" href="https://github.com/Krishnaraj017"
+              >Visit GitHub <i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project flex-pos">
+          <div class="project-img" >
+            <img src="./assets/images/10780333_19198969.jpg" />
+          </div>
+          <div class="title">Emotion Detector. </div>
+          <div class="desc" >Emotion Detection using Keras,AI,and Python.</div>
+          <div class="link">
+            <a
+              target="”_blank”"
+              href="https://github.com/Krishnaraj017/Emotion-Detector"
+              >Visit GitHub <i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="project flex-pos">
+          <div class="project-img" >
+            <img src="./assets/images/26413340_thanit2022mar_66.jpg" />
+          </div>
+          <div class="title">Object Motion Detector </div>
+          <div class="desc" >Detect object motion and generate a csv file.</div>
+          <div class="link">
+            <a target="”_blank”" href="https://github.com/Krishnaraj017/Object-Motion-detector">Visit GitHub <i
+                class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="project flex-pos">
+          <div class="project-img" >
+            <img src="./assets/images/9798369_4219072.jpg" />
+          </div>
+          <div class="title">Job Finder-React-Native </div>
+          <div class="desc" > App is designed to find the dream job with ease.</div>
+          <div class="link">
+            <a target="”_blank”" href="https://github.com/Krishnaraj017/Job-Finder-App">Visit GitHub <i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="project flex-pos">
+          <div class="project-img" >
+            <img src="./assets/images/22511422_65Z_2112.w012.n001.20A.p20.20 (1).jpg" />
+          </div>
+          <div class="title">BMI Calculator.</div>
+          <div class="desc" >An app for people who want to maintain a healthy lifestyle.</div>
+          <div class="link">
+            <a
+              target="”_blank”"
+              href="https://github.com/Krishnaraj017/BMI-Calculator"
+            >
+              Visit GitHub <i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project flex-pos">
+          <div class="project-img" >
+            <img src="./assets/images/31210601_7779606.jpg" />
+          </div>
+          <div class="title">Auto V Card.</div>
+          <div class="desc" >The website retrieves RTO data  and provides a PDF download option.</div>
+          <div class="link">
+            <a target="”_blank”" href="https://github.com/Krishnaraj017/AutoVcard">
+              Visit GitHub <i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+       
+      
+    </section>
+    <!-- section 4 -->
+    <section class="about-me" id="about-me">
+      <div class="container">
+       
+        <div class="right">
+          <div class="heading">
+            <div class="info">Get to Know</div>
+            <div class="main-head">
+              <h1>About Me</h1>
+              <hr class="el2" />
+            </div>
+          
+            I am an exploring enthusiast currently residing in
+            <span style="font-weight: 400">Karnataka, India.</span> I am pursuing my
+            <span style="font-weight: 400">Bachelors in Computer Science Engineering</span> from
+            <span style="font-weight: 400">Mangalore Institute Of Technology & Engineering, Moodabidri.</span>
+          
+          
+            My interests include
+            <span style="font-weight: 400">Computer Programming, Web Development, App Development</span> and other artistic
+            pursuits like
+            <span style="font-weight: 400">Reading, Designing, Music and Adventure Sports.</span>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 5 -->
+
+    <img
+      class="img-pos image contactimg1"
+      src="./assets/images/headphones with microphone.png"
+      height="200px"
+      style="overflow: hidden;"
+    />
+
+    <img
+      class="img-pos image contactimg2"
+      src="./assets/images/Design El 1.png"
+      height="200px"
+      style="overflow: hidden;"
+    />
+
+    <img
+      class="img-pos image contactimg3"
+      src="./assets/images/alexander-shatov-mr4JG4SYOF8-unsplash.jpg"
+      height="200px"
+      style="overflow: hidden;"
+      
+    />
+
+    <img
+      class="img-pos image contactimg4"
+      src="./assets/images/4102879_971.jpg"
+      height="200px"
+      style="overflow: hidden;"
+    />
+
+    <section class="contact" id="contact">
+      <div class="right">
+        <div class="heading">
+          <div class="info">What's Next?</div>
+          <div class="main-head">
+            <h1>Get In Touch</h1>
+          </div>
+          <div class="description">
+            <h4>I’m interested in freelance opportunities - expecially ambitious or
+            large projects. However, if you have any request or question, don’t
+            hesitate to contact me below.</h4>
+          </div>
+          <div class="button">
+            <a href="https://www.linkedin.com/in/krishnaraj-shetty-b10617229">Say Hello</a>
+          </div>
+        
+
+        </div>
+      </div>
+      <div class="footer">
+
+
+       <h4>Designed and Maintained by Krishnaraj S</h4> <br /><br />
+        <a target="_blank" style="color:black" href="https://github.com/Krishnaraj017"><span class="stars"><i class="fa-regular fa-star"></i></span
+        ></a>
+        <a target="_blank" style="color:black" href="https://github.com/Krishnaraj017"><span class="forks"><i class="fa-solid fa-code-fork"></i></span></a>
+      </div>
+      
+    </section>
+    
+
+    <!-- javascript -->
+    <script
+      src="https://kit.fontawesome.com/736afdd3dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets\js\script.js"></script>
+    <!-- end -->
+  </body>
+</html>

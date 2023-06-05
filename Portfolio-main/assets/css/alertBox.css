@@ -1,0 +1,135 @@
+/* The alert message box */
+.alert {
+  padding-right: 1.2rem;
+  padding-top: 0.7rem;
+  background-color: #f4a30c;
+  /* Red */
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  height: 3rem;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: rgb(90, 83, 83);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.alert {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.alert {
+  animation-name: slide-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.alert.hide {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.closebtn:hover {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(-20deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.alert {
+  /* existing styles */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .alert {
+    padding-right: 0.6rem;
+    padding-top: 0.4rem;
+    font-size: 14px;
+    height: 2.5rem;
+  }
+
+  .closebtn {
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,165 @@
+#skills {
+    background: #ffffff;
+}
+
+#skills .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-head-2 {
+    display: none;
+}
+
+/* Define the animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to the element */
+.main-head {
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+/* Add a hover effect with another animation */
+.main-head:hover {
+    animation-name: colorChange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Define the hover animation */
+@keyframes colorChange {
+    0% {
+        background-color: rgb(14, 238, 238);
+    }
+
+    50% {
+        background-color: rgb(201, 201, 49);
+    }
+
+    100% {
+        background-color: rgb(15, 224, 224);
+    }
+}
+
+.main-head {
+    border-radius: 3%;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+#skills .main-head .sub-head {
+    font-size: 2rem;
+    font-family: 'Heebo';
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1.2rem;
+}
+
+#skills .main-head .sub-head2 {
+    font-size: 1.5rem;
+    display: none;
+}
+
+.heading-mb {
+    display: none;
+}
+
+#skills .rside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .lside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-list li {
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 1.2rem;
+    width: 200px;
+    box-shadow: 2px 2px 0 0 rgb(13, 146, 240);
+    transition: 0.3s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.skill-list li i {
+    font-size: 2rem;
+}
+
+.skill-list li:hover {
+    background: rgb(246, 247, 246);
+    box-shadow: none;
+    cursor: none;
+}
+
+.container-2 {
+    flex-wrap: wrap;
+}
+
+.container-2 .button {
+    width: 100px;
+    padding: 1rem;
+    margin: 0 !important;
+}
+
+.container-2 .item {
+    flex-direction: column;
+    flex: 50%;
+    gap: 1rem;
+    font-family: 'Heebo';
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.container-2 .circle {
+    border-radius: 100%;
+    background-color: var(--bg-primary);
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
+    border: 5px solid var(--primary);
+}
+
+.skillimage {
+    animation: a1 3s infinite ease;
+}
+
+@media screen and (max-width: 687px) {
+    #skills .container {
+        flex-direction: column;
+    }
+
+    #skills .main-head h1 {
+        font-size: xx-large;
+    }
+
+    #skills .main-head .sub-head2 {
+        display: block;
+    }
+
+    .skill-list li {
+        width: 150px;
+        padding: 0.5rem;
+    }
+}
